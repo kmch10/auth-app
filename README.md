@@ -1,16 +1,65 @@
-# React + Vite
+#  Secure Auth Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern authentication system built with React and Tailwind CSS, featuring login/signup flow, validation, and protected routes.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Features
 
-## React Compiler
+*  User authentication (Login & Signup)
+*  Protected routes (only accessible after login)
+*  Form validation (email format, password rules)
+*  Error handling with user feedback
+*  Local storage-based session management
+*  Navigation between Login & Signup pages
+*  Modern UI built with Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+##  Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React
+* React Router DOM
+* Tailwind CSS
+* JavaScript (ES6+)
+
+---
+
+##  Preview
+
+*Add screenshots here (login page, signup page, dashboard)*
+
+---
+
+##  How It Works
+
+* User signs up → credentials stored in localStorage
+* User logs in → credentials validated
+* On success → redirected to dashboard
+* Protected routes prevent unauthorized access
+
+---
+
+##  Note
+
+This project simulates authentication on the frontend using localStorage.
+In a real-world application, authentication would be handled via a backend using secure APIs and token-based authentication (e.g., JWT).
+
+---
+
+##  Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+---
+
+##  Future Improvements
+
+* Backend integration (Node.js / Express)
+* Password hashing
+* Role-based access control
+* Persistent sessions
+
